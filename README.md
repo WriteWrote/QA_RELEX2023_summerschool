@@ -1,6 +1,5 @@
 Taking into account that Swagger description was written in English, I hereby provide this task in Eng.
 
-# Eng
 ## Checklist
 1. **Get all users info**
 	1. get with role ADMIN
