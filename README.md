@@ -8,7 +8,7 @@ Taking into account that Swagger description was written in English, I hereby pr
 	1. get with role ADMIN
 	2. get with role USER
     
-*Presuming that there might be bug when programmes only allows USER to get greeting, but not ADMIN; when supposingly there must be greeting for all types of users*
+*Presuming that there might be bug when developers only allows USER to get greeting, but not ADMIN; when supposingly there must be greeting for all types of users*
 
 3. **Login**
 	1. Username+password *(as only required fields)*
