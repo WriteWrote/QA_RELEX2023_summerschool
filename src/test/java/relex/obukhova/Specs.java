@@ -4,41 +4,39 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
-public class Specs {
-    private static final String BASE_URI = "http://test-microcam.relex.ru:40000";
+import java.util.UUID;
 
-    private static final RequestSpecification precondition = RestAssured.given()
-            .baseUri(Specs.receiveBaseUri())
+public class Specs {
+    public static final String BASE_URI = "http://test-microcam.relex.ru:40000";
+
+    public static final RequestSpecification REQUEST_SPECIFICATION = RestAssured.given()
+            .baseUri(Specs.BASE_URI)
             .contentType(ContentType.JSON);
 
-    private static final String ADMIN_AUTH_CREDENTIALS = "{\n" +
+    public static final String ADMIN_AUTH_CREDENTIALS = "{\n" +
             "   \"username\": \"Adm1n!11\",\n" +
             "   \"password\": \"h_X___e$u#0\"\n" +
             "}";
 
-    private static final String USER_AUTH_CREDENTIALS = "{\n" +
-            "   \"username\": \"admin\",\n" +
-            "   \"password\": \"password\"\n" +
+    public static final String USER_AUTH_CREDENTIALS = "{\n" +
+            "   \"username\": \"oapufzqean\",\n" +
+            "   \"password\": \"SoME_PAssword1!!\"\n" +
             "}";
 
-    private static final String GREETING = "\"Hellow world!\"";
-    public static String receiveBaseUri() {
-        return BASE_URI;
-    }
+    public static final String VALID_USER_CREDS = "{\n" +
+            "\"firstName\": \"user\",\n" +
+            "\"lastName\": \"userovich\",\n" +
+            "\"login\": \"user3Q2W\",\n" +
+            "\"email\": \"user@post.com\",\n" +
+            "\"password\": \"Pa$$w0rd\"\n" +
+            "}";
+    public static final String INVALID_USER_CREDS = "{\n" +
+            "\"firstName\": \"user\",\n" +
+            "\"lastName\": \"userovich\",\n" +
+            "\"login\": \"user\",\n" +
+            "\"email\": \"user@post.com\",\n" +
+            "\"password\": \"Pa$$\"\n" +
+            "}";
 
-    public static RequestSpecification receivePrecondition(){
-        return precondition;
-    }
-
-    public static String receiveAdminCredentials(){
-        return ADMIN_AUTH_CREDENTIALS;
-    }
-
-    public static String receiveUserCredentials(){
-        return USER_AUTH_CREDENTIALS;
-    }
-
-    public static String receiveGreeting(){
-        return GREETING;
-    }
+    public static final String GREETING = "\"Hellow world!\"";
 }
