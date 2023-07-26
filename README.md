@@ -86,12 +86,12 @@ Logged as admin and received a token, which was afterwards used to get info abou
 Logged as a user and received 403 after trying to get info about all users.
 ![Pasted image 20230725204952](https://github.com/WriteWrote/QA_RELEX2023_summerschool/assets/45429218/edc9ca5d-40d2-4f72-b24f-482eb9f8f189)
 
-Other test-cases would not be represented by photo, but they surely took their time ;-)
+Other test-cases would not be represented by photo, but they surely took their place.
 
 ***
 
 ## Autotesting
-This is a humble attemp, so don't take it seriously, because I had never ever experience with autotests.
+This is a humble attemp, so don't take it seriously, because I had never ever had any experience with autotests.
 
 #### Some description:
 - Specs -- public constrains such as specs for request, usercredentials, greeting and such.
